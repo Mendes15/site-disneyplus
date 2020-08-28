@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+    color: white;
+  
+}
+
+header{
+    /* mettre en line */
+
+    /* border: chartreuse 3px solid; */
+    display:flex; 
+    /* justify-content: flex-end; */
+} 
+
+ul{
+    display:flex;
+    /* justify-content: flex-end; */
+    
+}
+/* element parent de btns */
+nav {
+display: flex;
+   width: 100%;
+   justify-content: flex-end;
+}
+
+/*  ajuster la taille des btn */
+.btn-inscription, .btn-identification{
+    padding: 8px 16px ;
+    list-style: none;
+    background-color: rgba(0,0,0,.6);
+    border: white 2px solid;
+    margin: 8px;
+   justify-content: flex-end;
+   
+   
+  }
+
+/* coloriage des paragraphe en grey */
+p{
+    color: grey;
+    text-align: center;
+}
+/* placer le titre pricipale au l'image intro */
+h1{
+    font-size: 28px;
+    border: chartreuse 3px solid;
+    position: absolute;
+    top: 435px;
+    margin-left: 56px;
+}
+/* placer le logo au milieu de l'image intro */
+.logo img{
+    position: absolute;
+    top: 315px;
+}
+
+
+
