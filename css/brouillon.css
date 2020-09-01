@@ -1,59 +1,222 @@
-body{
-    background-color: black;
-    color: white;
-  
-}
-
-header{
-    /* mettre en line */
-
-    /* border: chartreuse 3px solid; */
-    display:flex; 
-    /* justify-content: flex-end; */
-} 
-
-ul{
-    display:flex;
-    /* justify-content: flex-end; */
+ @font-face{
+        font-family:'Avenir-Roman-12';
+        src: url('../fonts/Avenir-Roman-12.woff') format('woff'); 
     
 }
-/* element parent de btns */
-nav {
-display: flex;
-   width: 100%;
-   justify-content: flex-end;
+
+
+}
+  /* positionnement logo */
+  /* placer le logo au milieu de l'image intro*/
+.logo img{
+    width: 200px;
+
+   
+    
+
+    
 }
 
-/*  ajuster la taille des btn */
+/* ---------HEADER------- */
+
+/* ---------HEADER------- */
+
+/* barre nav */
+nav{
+        display: flex;
+       justify-content: flex-end;
+       
+}
+       
+ 
+ul{
+    display:flex; 
+}
+      /*-------------SECTION-INTRO--------- */
+      
+     /*-------------SECTION-INTRO--------- */
+           
+       
+/* mettre la taille normal du texte des prix abonnement */
+span{
+    font-weight: normal;
+          
+}
+
+/* element parent de btns */
+/*  ajuster la taille des btn nav barre */
 .btn-inscription, .btn-identification{
     padding: 8px 16px ;
     list-style: none;
     background-color: rgba(0,0,0,.6);
     border: white 2px solid;
     margin: 8px;
-   justify-content: flex-end;
+    justify-content: flex-end;
+    height: 20px;
+    width: 100px;
    
-   
-  }
 
-/* coloriage des paragraphe en grey */
-p{
-    color: grey;
-    text-align: center;
 }
+
+       /* faire disparaitre btn inscription */
+
+.btn-inscription{
+display: none;
+}
+
+
+
+
+
 /* placer le titre pricipale au l'image intro */
-h1{
+/* h1{
     font-size: 28px;
-    border: chartreuse 3px solid;
+      
     position: absolute;
     top: 435px;
     margin-left: 56px;
+    } */
+
+
+    
+    /* .art-prix-mensuel{
+        /* display:flex; */
+       
+        /* flex-direction: column;
+        justify-content: start; */
+        /* position: relative;
+        top: -328px;
+    }
+    
+    .div-prix-mensuel{
+        display: flex;
+        flex-direction: column; */
+    /* } */ 
+    /* configuration container contenu */
+.section1 , .section2 + .section3+.section4 +{
+    display: flex;
+     flex-direction: column 
 }
-/* placer le logo au milieu de l'image intro */
-.logo img{
-    position: absolute;
-    top: 315px;
+
+
+    
+.section-intro{
+    display: flex;
+    flex-direction: column;
+}
+   /* mettre le container prix-box en ligne */
+.prix-box{
+    display: flex;
+}
+    
+    
+/* definition de la taille et titres des section avec iamges */
+h2 {
+    
+        
+}
+/* ------------------SECTIONS-------------- */
+
+/* ------------------SECTIONS-------------- */
+    /* setup de la zone de texte pour tout les sections */
+
+.texte-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    /* positionnement des sections */
+}
+.section1, .section2, .section3, .section4{
+        display: flex;
+        align-items: center;
+}
+
+    
+
+
+    
+/* -------------FOOTER------------- */
+
+/* -------------FOOTER------------- */
+
+   
+.
+
+   
+
+   
+/* taille police : titre principale */
+h1{
+  
+    font-size: 42px;
+     margin: 0px 0px 0px 51px; 
+}
+
+
+/* positionnement box-prix */
+
+
+
+
+
+
+.devices{
+    border: 5px yellow solid;
+   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        
+    
+
+} 
+/* .devices img{
+    display: flex;
+} */
+
+
+
+/* btn regardez et économiser */
+.btn-regardez,.btn-economiser{
+    background-color: #0483EE;
+    color: white;
+    width: 300px;
+    height: 78px;
+    font-size: 18px;
+    padding: 16px 14px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.prix-box h3{
+    text-align: justify;
 }
 
 
 
+/* ------------------Ordinateur -------------- */
+@media screen and (min-width:1025px){
+
+    0%{
+        .btn-inscription, .btn-identification{
+            padding: 8px 16px ;
+            list-style: none;
+            background-color: rgba(0,0,0,.6);
+            border: white 2px solid;
+            margin: 8px;
+           justify-content: flex-end;
+           height: 20px;
+           width: 100px;
+           background-color: #0483EE ;
+           border: none;
+    }
+    20%
+       
+     
+}
