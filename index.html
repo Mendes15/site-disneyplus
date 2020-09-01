@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disney+</title>
-    <link rel="stylesheet" href="/css/brouillon.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- <link rel="stylesheet" href="/css/brouillon.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    
 </head>
 
 <body>
@@ -23,93 +27,169 @@
 <!--------------------------------------------------------------- -->
 
     <main>
+        
         <!-- tout les sections image + texte -->
-        <section class="section-intro">
-
-            <figure class="affiche-heros">
-                <img src="/assets/olp_hero_desktop_UKI_FR.jpg" alt="affiche" width="100%">
-            </figure>
-            <h1>5 mondes. 1 destination.</h1> 
-            <!-- tittre principale -->
+        <!-- tittre principale -->
+        <section  class="section-intro">
+            
+            
             <article class="parent-logo">
-                <!-- contenu dans le background -->
                 <figure class="logo">
-                    <img src="./assets/logo-disneyplus.png" alt="Logo disney" width="15%"> 
-                      <!-- logo -->
+                    <img src="./assets/logo-disneyplus.png" alt="Logo disney" > 
+                    <!-- logo -->
                 </figure>
-            </article>
-            <article >
-                <div class="prix-annuel">
-                    <h3>6.99€</h3>
-                    <p>par mois</p>
-                    <p>Sans engagement.* Voir conditions.**</p>
-                    <p>Économisez plus de 15 %. Voir conditions.**</p>
-                    <button>REGARDEZ MAINTENANT</button>
-                </div>   
-            </article>
+            </article >
+            <h1>5 mondes. 1 destination.</h1> 
 
-            <article >
-                <div class="prix-annuel">
-                    <h3>69.99€</h3>
-                    <p>par an</p>
-                    <button>ÉNOMISEZ SUR 12 MOIS</button>
+                <article class="prix-box">
+                    <div class="div-prix-mensuel">
+                        
+                        <h3>6.99€ <span>par mois</span></h3>
+                        <p>Sans engagement.* Voir conditions.**</p>
+                        <button class="btn-regardez">REGARDEZ MAINTENANT</button>
+                        <p>*Résiliation effective à la fin de la période de facturation en cours. </p>
+                    </div>   
+                
+
+                <div class="div-prix-annuel">
+                    <h3>69.99€ <span>par an</span></h3>
+                
+                    <p>Économisez plus de 15 %. Voir conditions.**</p>
+                    <button class="btn-economiser">ÉCONOMISEZ SUR 12 MOIS</button>
+                    <p>**Comparatif entre 12 mois d'abonnement mensuel et l'abonnement annuel.</p>   
                 </div>  
             </article>
-            
-            
-
-            <article> 
-                <!-- logos Produteurs films -->
-                <figure>
-                    <img src="/assets/disney-franchise-logos.png" alt="" width="65%">
-                </figure>
-            </article>
-            
-            <!-- logos Produteurs films -->
         </section >
+
+             <!-- logos Produteurs films -->
+                        <article> 
+                            <!-- logos Produteurs films -->
+
+    <figure class="logo-producteurs">
+                                <img src="/assets/disney-franchise-logos.png" alt="" width="55%">
+                            </figure>
+                        </article>
         
         <section class="section1">
             <figure>
                 <img src="/assets/EU_DynamicContentTile[2].png" alt="">
             </figure>
-            <h2>Du divertissement en continu</h2>
+            <div class="texte-section">
+                <h2>Du divertissement en continu</h2>
 
-            <p>Disney+ réunit Disney, Pixar, Marvel, Star Wars et National Geographic dans une destination. Des grands
+             <p>Disney+ réunit Disney, Pixar, Marvel, Star Wars et National Geographic dans une destination. Des grands
                 succès aux inoubliables classiques sans oublier les séries, émissions et films exclusifs Disney+
                 Originals, il y en a pour tous les goûts.</p>
+            </div>
         </section>
             
        
 
         <section class="section2">
+            <div class="texte-section">
+                <h2>Regardez où et quand vous le voulez</h2>
+                <p> Profitez de Disney+ sur 4 écrans en simultané, en mobilité sur votre téléphone et tablette ou à la maison
+                sur votre TV ; le tout en ultra haute définition sur une sélection de contenus.</p>
+            </div>
             <figure>
-                <img src="/assets/FR_OLP1_originals_imagery_June_jpg.jpg" alt="">
+                <img src="/assets/olp_side_align_devicelockup_fr-FR.jpg" alt="">
             </figure>
-            <h2>Regardez où et quand vous le voulez</h2>
-            Profitez de Disney+ sur 4 écrans en simultané, en mobilité sur votre téléphone et tablette ou à la maison
-            sur votre TV ; le tout en ultra haute définition sur une sélection de contenus.
         </section>
-
+        
         <section class="section3">
             <figure>
-                <img src="/assets/olp_side_align_avatar_english.jpg" alt="">
+                <img src="/assets/FR_OLP1_originals_imagery_June_jpg.jpg" alt="" >
             </figure>
-            <h2> nouveaux Disney+ Originals tous les mois</h2>
-            <p> films, des séries et des documentaires créés par les artistes des studios Disney, Pixar, Marvel, Star
+            <div class="texte-section">
+                <h2> De nouveaux Disney+ Originals tous les mois</h2>
+                <p> films, des séries et des documentaires créés par les artistes des studios Disney, Pixar, Marvel, Star
                 Wars et National Geographic, le tout exclusivement sur Disney+.</p>
+            </div>
         </section>
 
         <section class="section4">
-            <figure>
-                <img src="" alt="">
-            </figure>
-
-            <h2>Téléchargez vos films et séries</h2>
-            <p>Téléchargez ce que vous voulez sur 10 appareils mobiles distincts pour le regarder quand vous le
+            <div class="texte-section">
+                <h2>Téléchargez vos films et séries</h2>
+                <p>Téléchargez ce que vous voulez sur 10 appareils mobiles distincts pour le regarder quand vous le
                 souhaitez, même dans les endroits où il n'y a pas de Wi-Fi.</p>
-        </section>
+            </div>
+                <figure>
+                    <img src="/assets/olp_side_align_avatar_english.jpg" alt="">
+                </figure>
+            </section>
+
+            <!--  parametrage section devices -->
+
+            <h2 class="titre-devices">Accessible sur vos appareils préférés</h2>
+
+            <section class="devices">
+
+                
+                <div class="tv">
+                    <figure>
+                        <img src="assets/device-group-tv.png" alt="" ">
+                    </figure>
+                    <h3>Télévisions</h3>
+                    <p>Amazon Fire TV</p>
+                    <p>Appareils Android TV</p>
+                    <p>AppleTV</p>
+                    <p>Chromecast</p>
+                    <p>TV LG</p>
+                    <p>Roku</p>
+                    <p>Samsung</p>
+                </div>
+                
+                <div class="pc">
+                    <figure>
+                        <img src="assets/device-group-computer.png" alt="">
+                    </figure>
+                    <h3>Ordinateurs</h3>
+                    <p>Chrome OS</p>
+                    <p>MacOS</p>
+                    <p>PC Windows</p>
+                </div>
+
+                <div class="mobile-tablette">
+                    <figure>
+                        <img src="assets/device-group-mobile-tablet.png" alt="">
+                    </figure>
+                    <h3>Mobiles et tablettes</h3>
+                    <p>Tablettes Amazon Fire</p>
+                    <p>Mobiles et tablettes Android</p>
+                    <p>iPhone & iPad</p>
+                </div>
+
+                <div class="console-jeux">
+                    <figure>
+                        <img src="assets/device-group-game-consoles.png" alt="">
+                    </figure>
+                    <h3>Consoles de jeux</h3>
+                    <p>PS4</p>
+                    <p>Xbox One </p>
+                </div>
+            </section>
     </main>
+
     <footer>
+        <figure class="logo-footer">
+            <img src="./assets/logo-disneyplus.png" alt="Logo disney" width="7%"> 
+              <!-- logo -->    
+        </figure>
+        <!-- Mentions legaux -->
+        <div class="propos">
+            <a href="./index.html"> Français </a>
+            <a href="./index.html"> Conditions générales d'abonnement</a>
+            <a href="./index.html"> Règles de Respect de la Vie Privée </a>
+            <a href="./index.html"> Droits Données dans l'UE et au R-U </a>
+            <a href="./index.html"> Modalités relatives aux cookies </a>
+            <a href="./index.html"> Publicités ciblées par centres d'intérêt</a>
+            <a href="./index.html"> Appareils compatibles</a>
+            <a href="./index.html"> Aide </a>
+            <a href="./index.html"> Gérer vos préférences </a>
+            <a href="./index.html"> À propos de Disney+</a> 
+            <a href="./index.html"> © Disney. Tous droits réservés.</a> 
+        </div>
+
 
     </footer>
 </body>
