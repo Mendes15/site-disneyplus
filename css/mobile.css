@@ -1,0 +1,181 @@
+/* ------------------Smartphone -------------- */
+@media screen and (max-width:769px) {
+    main{
+        width: 100%;
+       
+        margin:0px;
+        padding: 0px;
+    }
+    .logo-producteurs {
+       display: none;
+    }
+    /* sections */
+
+     /* sections */
+    .section-divertissement, .section-mobilite, .section-nouveaute, .section-telechargement{
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+    
+        
+    }
+    .texte-section{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        flex-wrap: wrap;
+        width: 80%;
+        
+        /* positionnement des sections */
+    }
+    .section-divertissement{
+        display: flex;
+        flex-wrap: wrap;
+        
+       
+    }
+    .section-mobilite{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+       
+    }
+    .section-nouveaute{
+        display: flex;
+        flex-wrap: wrap;
+       
+       
+    }
+    .section-telechargement{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+       
+    }
+    section{
+        justify-content: center;
+    }
+
+    .logo-footer{
+       
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    
+
+    
+    body{
+        background-color: #040714;
+        color: white;
+        font-family: 'Avenir-Roman-12';
+        /* configuration background image */
+        background-image: url( /assets/olp_hero_desktop_UKI_FR.jpg) ;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 650px;
+        max-width: 100%;
+        text-align: center;
+            /* configuration background image */
+        margin: 0px;
+        padding: 0px;
+        
+        
+    }
+  
+    .section-intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+ 
+        
+    }
+
+    .prix-box{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20%;
+        margin: 0px;
+        padding: 0px;
+}
+
+.btn-regardez,.btn-economiser{
+    background-color: #0483EE;
+    color: white;
+    width: 500px;
+    height: 78px;
+    font-size: 18px;
+    
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+hr{
+    width: 360px;
+    color: wheat ;
+    text-align: center;
+   
+    justify-content: center;
+}
+p{
+    text-align: center;
+   
+}
+
+.prix-box h3{
+    text-align: center;
+    font-size: 28px;
+}
+h1{
+    justify-content: center;
+    
+}
+
+#fleche{
+    display: flex;
+    justify-content: center;
+}
+/* images des sections */
+.section-divertissement img,.section-mobilite img, .section-nouveaute img, .section-telechargement img{
+    width: 500px;
+    padding: 45px 30px;
+
+}
+/* sections devices */
+
+ 
+ .section-devices h3{
+    text-align: center;
+     
+    
+ }
+ .appareils{
+     display: flex;
+     justify-content: center;
+     
+    
+ 
+ }
+ /* icons devices */
+ .appareils img{
+    flex-wrap: wrap;
+     width: 100%;
+ }
+
+/* .appareils figure :nth-child(3){
+
+    border:red 5px solid;
+}
+
+
+} */
