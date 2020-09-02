@@ -1,5 +1,8 @@
 
+main{
+    width: 100%;
 
+}
 /* importation de la police */
 @font-face {
     font-family: Avenir-Roman-12;
@@ -16,7 +19,8 @@ body{
     background-position: top center;
     background-size: contain;
     height: 1200px;
-    width: 100%;
+    max-width: 100%;
+
         /* configuration background image */
     
 }
@@ -62,8 +66,10 @@ h1{
     list-style: none;
     background-color: rgba(0,0,0,.6);
     border: white 2px solid;
-    margin: 8px;
    justify-content: flex-end;
+   width: 200px;
+   text-align: center;
+   height: 25px;
    }
    /* faire disparaitre btn inscription */
    .btn-inscription{
@@ -86,15 +92,17 @@ p{
 .section-intro{
     display: flex;
     flex-direction: column;
+    
 }
  /* mettre le container prix-box en ligne */
 
  .prix-box{
     display: flex;
-    text-align: justify;
+    text-align: center;
     padding: 111px 0px 0px 0px;
     margin: 0px 0px 0px 25px;
-    
+     
+     
     
     
 }
@@ -104,19 +112,23 @@ p{
     width: 300px;
     height: 78px;
     font-size: 18px;
-    padding: 16px 14px;
+   
     border-radius: 7px;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+   justify-content: ;
 }
-
+/* les prix en destaque */
 .prix-box h3{
     text-align: justify;
+    color: white;
 }
-
-
+/* phrase prix */
+span{
+    color: darkgray;
+}
 /* definition de la taille et titres des section avec iamges */
 h2 {
     
@@ -124,6 +136,14 @@ h2 {
     text-align: center;
     
 }
+/* fleche */
+#fleche{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%
+}
+
+
 /* setup de la zone de texte pour tout les sections */
 .texte-section{
     display: flex;
@@ -132,43 +152,56 @@ h2 {
     
     /* positionnement des sections */
 }
-.section1{
+.section-divertissement{
     display: flex;
     align-items: center;
 }
-.section2{
+.section-mobilite{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.section3{
+.section-nouveaute{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.section4{
+.section-telechargement{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.section1 figure{
+.section-divertissement figure{
     width: 80%;
-    border: 5px yellow solid;
+  
 }
+.section-divertissement img,.section-mobilite img, .section-nouveaute img, .section-telechargement img{
+    width: 762px;
+
+}
+/* positionnement sections devices */
 
 /* positionnement sections devices */
-.devices{
+
+
+.section-devices h3{
+   text-align: center;
+    
+   
+}
+.appareils{
     display: flex;
     justify-content: center;
-    text-align: center;
-    
-    
+   
+
+}
+/* icons devices */
+.appareils img{
+   
+    width: 100%;
 }
 
-/* section devices */
-.devices img{
-    width: 50%;
-}
+
 
 /* -------------FOOTER------------- */
 
