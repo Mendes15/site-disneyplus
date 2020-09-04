@@ -24,7 +24,7 @@ body{
         /* configuration background image */
     
 }
-  /* positionnement logo */
+  /* positionnement logo section intro */
   /* placer le logo au milieu de l'image intro*/
   .logo img{
     width: 200px;
@@ -37,16 +37,57 @@ body{
 /* ---------HEADER------- */
 
 /* ---------HEADER------- */
+
+header{
+    display: flex;
+}
+.logo-nav{
+    justify-content: flex-start;
+   color: transparent;
+   
+}
+.logo-nav img{
+   opacity:0;
+   /* cacher le logo de nav barre sans modifier mon positionnement en flex */
+ 
+}
+/* nav container */
+nav{
+  position: fixed;
+  /* pour fixer la barre nav */
+    display: flex;
+    justify-content: flex-end;
+}
+ul{
+    margin: 29px 0px 0px 0px;
+    display: flex;
+}
+/* nav li btns */
+li{
+   padding-top: 10px;
+   
+}
+
 /* barre nav container */ 
-nav {
+/* nav {
 display: flex;
 background-color: transparent;
-justify-content: flex-end;}
+justify-content: flex-end;
+position: fixed;
+border: lawngreen 5px solid;
+}
+
  
    /* barre nav */  
-   ul{
+   /* ul{
        display:flex;
 }
+
+.logo-nav img{
+    justify-content: flex-start;
+  
+}  */
+
 
    /* mettre la taille normal du texte des prix abonnement */
    span{
@@ -62,20 +103,33 @@ h1{
 /* element parent de btns */
    /*  ajuster la taille des btn nav barre */
 .btn-inscription, .btn-identification{
-    padding: 8px 16px ;
-    list-style: none;
-    background-color: rgba(0,0,0,.6);
-    border: white 2px solid;
+   list-style: none;
+   background-color: rgba(0,0,0,.6);
+   border: white 2px solid;
    justify-content: flex-end;
    width: 200px;
    text-align: center;
-   height: 25px;
-   }
+   height: 30px;
+   text-align: center;
+   border-radius: 5%;
+   -webkit-border-radius: 5%;
+   -moz-border-radius: 5%;
+   -ms-border-radius: 5%;
+   -o-border-radius: 5%;
+}
+
+   
    /* faire disparaitre btn inscription */
    .btn-inscription{
-       display: none;
+    margin: 0px 19px 0px 0px;
+    opacity: 0;
+    /* border: lawngreen 5px solid */
    }
 
+   .btn-inscription:hover,.btn-identification:hover{
+    background-color: white;
+    color: black;
+   }
    .logo-producteurs{
     padding: 344px 0px 32px 0px
 }
@@ -83,46 +137,69 @@ h1{
 /* coloriage des paragraphe en grey definition taille police*/
 p{
     color:darkgray;
-    text-align: center;
+    text-align: center; 
     font-size: 18px;
+   
 }
 
 
 
-.section-intro{
-    display: flex;
-    flex-direction: column;
-    
-}
- /* mettre le container prix-box en ligne */
 
- .prix-box{
-    display: flex;
-    text-align: center;
-    padding: 111px 0px 0px 0px;
-    margin: 0px 0px 0px 25px;
-     
      
     
     
+
+hr{
+    display: none;
 }
+.prix-box{
+    margin: 33px 0px 0px 53px;
+    display: flex;
+
+}
+
 .btn-regardez,.btn-economiser{
     background-color: #0483EE;
     color: white;
     width: 300px;
     height: 78px;
     font-size: 18px;
+    border-radius: 15px;
    
-    border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
-   justify-content: ;
+   
+  
 }
+.div-prix-annuel{
+    padding: 0px 0px 0px 26px;
+}
+
+/* espacer les p en dessus des btn */
+
+/* conditions de abbo p */
+.conditions-abonnement{
+    display: flex;
+    margin: 0px 0px 0px 52px;
+    width: 68%;
+    height: 54px;
+    
+}
+.conditions-abonnement-p{
+    font-size: small;
+}
+ 
+
+/* container section intro */
+.section-intro{
+    padding: 33px 0px 0px 53px;
+    margin: 55px 0px 0px 0px;
+    
+    
+}
+
 /* les prix en destaque */
 .prix-box h3{
-    text-align: justify;
+   
+   
     color: white;
 }
 /* phrase prix */
@@ -149,12 +226,16 @@ h2 {
     display: flex;
     flex-direction: column;
     text-align: center;
+   
     
     /* positionnement des sections */
 }
 .section-divertissement{
     display: flex;
     align-items: center;
+}
+.section-divertissement div{
+    border: springgreen 5px solid;
 }
 .section-mobilite{
     display: flex;
