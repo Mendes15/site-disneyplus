@@ -167,10 +167,23 @@ h1{
     
  }
 
- /* icons devices */
- .appareils img{
+ 
+
+
+/* positionnement des appareils section-devices */
+.appareils{
+    display: flex;   
     flex-wrap: wrap;
-     width: 100%;
- }
-
-
+    
+}
+/* aligner les icons avec le la div texte */
+.appareils figure {
+    width: 100%;
+    margin: 0;
+ 
+   
+}
+/* icons devices */
+.appareils div{
+    width: 50%;
+}
