@@ -68,25 +68,6 @@ li{
    
 }
 
-/* barre nav container */ 
-/* nav {
-display: flex;
-background-color: transparent;
-justify-content: flex-end;
-position: fixed;
-border: lawngreen 5px solid;
-}
-
- 
-   /* barre nav */  
-   /* ul{
-       display:flex;
-}
-
-.logo-nav img{
-    justify-content: flex-start;
-  
-}  */
 
 
    /* mettre la taille normal du texte des prix abonnement */
@@ -150,6 +131,7 @@ p{
     
 
 hr{
+    
     display: none;
 }
 .prix-box{
@@ -212,6 +194,8 @@ h2 {
     font-size: 34px;
     text-align: center;
     
+    
+    
 }
 /* fleche */
 #fleche{
@@ -223,43 +207,57 @@ h2 {
 
 /* setup de la zone de texte pour tout les sections */
 .texte-section{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+ 
+   
+   
    
     
     /* positionnement des sections */
 }
-.section-divertissement{
+.section-divertissement ,.section-mobilite , .section-nouveaute , .section-telechargement{
     display: flex;
-    align-items: center;
-}
-.section-divertissement div{
-    border: springgreen 5px solid;
-}
-.section-mobilite{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.section-nouveaute{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.section-telechargement{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.section-divertissement figure{
-    width: 80%;
+    
   
+   
 }
+/* section à droite */
+
+.texte-section-right{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+width: 60%;
+
+  
+
+}
+.texte-section-right h2{
+    margin-top:60px ;
+}
+
+
+
+/* sections à gauche */
+.section-mobilite, .section-telechargement{
+  display: flex;
+  flex-direction: row-reverse;
+
+
+    
+}
+.texte-section-left{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+
+
 .section-divertissement img,.section-mobilite img, .section-nouveaute img, .section-telechargement img{
     width: 762px;
 
 }
+
+
 /* positionnement sections devices */
 
 /* positionnement sections devices */

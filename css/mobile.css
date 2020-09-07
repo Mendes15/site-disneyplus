@@ -17,7 +17,7 @@
         padding: 0px;
         justify-content: center;
     
-        
+/*         
     }
     .texte-section{
         display: flex;
@@ -37,7 +37,7 @@
     .section-mobilite{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column-reverse;
+        flex-direction: column;
        
     }
     .section-nouveaute{
@@ -46,10 +46,14 @@
        
        
     }
+    .section-mobilite, .section-telechargement{
+        display: flex;
+        
+    }
     .section-telechargement{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column-reverse;
+        flex-direction: column; 
        
     }
     section{
@@ -90,8 +94,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0px;
-        padding: 0px;
+        padding: 109px 0px 0px 0px;
  
         
     }
@@ -124,6 +127,8 @@ hr{
     width: 360px;
     color: wheat ;
     text-align: center;
+  
+   
    
     justify-content: center;
 }
@@ -144,11 +149,13 @@ h1{
 #fleche{
     display: flex;
     justify-content: center;
+    padding: 31px 0px 0px 0px;
 }
 /* images des sections */
 .section-divertissement img,.section-mobilite img, .section-nouveaute img, .section-telechargement img{
     width: 500px;
     padding: 45px 30px;
+    
 
 }
 /* sections devices */
@@ -159,23 +166,11 @@ h1{
      
     
  }
- .appareils{
-     display: flex;
-     justify-content: center;
-     
-    
- 
- }
+
  /* icons devices */
  .appareils img{
     flex-wrap: wrap;
      width: 100%;
  }
 
-/* .appareils figure :nth-child(3){
 
-    border:red 5px solid;
-}
-
-
-} */
