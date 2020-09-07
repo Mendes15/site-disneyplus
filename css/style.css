@@ -268,16 +268,22 @@ width: 60%;
     
    
 }
-.appareils{
-    display: flex;
-    justify-content: center;
-   
+ 
 
+/* positionnement des appareils section-devices */
+.appareils{
+    display: flex;   
+    justify-content: center;
+}
+/* aligner les icons avec le la div texte */
+.appareils figure {
+    width: 85%;
+   
 }
 /* icons devices */
 .appareils img{
-   
     width: 100%;
+    
 }
 
 
