@@ -191,8 +191,8 @@ span{
 /* definition de la taille et titres des section avec iamges */
 h2 {
     
-    font-size: 34px;
-    text-align: center;
+    font-size: 43px;
+    text-align: justify;
     
     
     
@@ -201,55 +201,44 @@ h2 {
 #fleche{
     display: flex;
     justify-content: flex-end;
-    width: 100%
+    position: relative;
+    animation-name: flecheSautant;
+    animation-duration: 4ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    an
+    -webkit-animation:;
+}
+@keyframes flecheSautant{
+    0%   {bottom:0px;}
+    100% {bottom:60px;}
+
 }
 
 
 /* setup de la zone de texte pour tout les sections */
-.texte-section{
- 
-   
-   
-   
-    
+
     /* positionnement des sections */
-}
+
 .section-divertissement ,.section-mobilite , .section-nouveaute , .section-telechargement{
-    display: flex;
-    
-  
-   
+    display: flex;   
 }
+
 /* section à droite */
-
-.texte-section-right{
-    display: flex;
-    flex-wrap: wrap;
-   justify-content: center;
-width: 60%;
+ .texte-section-right p, .texte-section-left p{
+  text-align: left;
 
   
-
-}
-.texte-section-right h2{
-    margin-top:60px ;
+  
 }
 
-
-
-/* sections à gauche */
-.section-mobilite, .section-telechargement{
-  display: flex;
-  flex-direction: row-reverse;
-
-
-    
+.texte-section-right, .texte-section-left{
+    padding: 145Px 0px 0px 0px;
 }
-.texte-section-left{
-    display: flex;
-    flex-wrap: wrap;
-   justify-content: center;
-}
+
+
+
+
 
 
 .section-divertissement img,.section-mobilite img, .section-nouveaute img, .section-telechargement img{
@@ -315,4 +304,7 @@ width: 60%;
     padding: 8px 12px;
     text-decoration: none;
 }
-
+select{
+    background-color: black;
+    color: white;
+}
