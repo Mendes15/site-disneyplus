@@ -77,7 +77,7 @@
         color: white;
         font-family: 'Avenir-Roman-12';
         /* configuration background image */
-        background-image: url( /assets/olp_hero_desktop_UKI_FR.jpg) ;
+        background-image: url(/assets/olp_hero_mobile_UKI_FR.jpg) ;
         background-repeat: no-repeat;
         background-position: center top;
         background-size: 650px;
@@ -132,8 +132,9 @@ hr{
    
     justify-content: center;
 }
-p{
-    text-align: center;
+.conditions-abonnement p{
+    margin-left: 95px;
+    width: 100%;
    
 }
 
@@ -155,16 +156,29 @@ h1{
 .section-divertissement img,.section-mobilite img, .section-nouveaute img, .section-telechargement img{
     width: 500px;
     padding: 45px 30px;
+   
     
 
 }
-/* sections devices */
+p{
+   text-align: center;
+}
+/* positionnment des paragraphes des ection */
+.section-divertissement p,.section-mobilite p, .section-nouveaute p, .section-telechargement p{
+    margin-left: 100px;
+    font-size: normal;
+    width: 70%;
+    text-align: center;
+   
+}
+.section-mobilite , .section-telechargement{
+    display: flex;
+  flex-direction: column-reverse;    
+}
 
- 
+/* sections devices */
  .section-devices h3{
     text-align: center;
-     
-    
  }
 
  
